@@ -1,0 +1,181 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Input Mask</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Input Mask</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">Input Mask Demo
+                        <ul class="actions top-right">
+                            <li>
+                                <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documentation"><i class="la la-external-link"></i></a>
+                            </li>
+                        </ul>
+                    </h5>
+                    <div class="card-body">
+                        <form action="#" class="form-horizontal">
+                            <div class="form-body">
+                                <div class="inputs">
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Date</label>
+                                        <div class="col-md-5">
+                                            <input type="text" placeholder="" class="form-control date" id="date" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Hour</label>
+                                        <div class="col-md-5">
+                                            <input type="text" placeholder="" class="form-control time" id="time" maxlength="8">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Date &amp; Hour</label>
+                                        <div class="col-md-5">
+                                            <input type="text" placeholder="" class="form-control date_time" id="date_time" maxlength="19">
+                                        </div>
+                                    </div>
+                                    <hr class="dashed ">
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">With Callbacks (open console)</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control cep_with_callback" placeholder="" id="cep_with_callback" maxlength="9">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Crazy Zip Code</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control crazy_cep" id="crazy_cep" maxlength="9">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Money</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control money" id="money">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Mask placeholder option</label>
+                                        <div class="col-md-1">
+                                            <input type="text" class="form-control placeholder" id="placeholder" placeholder="__/__/____" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Masks on div elements!</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control placeholder" id="placeholder" placeholder="__/__/____" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Telephone</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control phone" id="phone" maxlength="9">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Telephone with Code Area</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control phone_with_ddd" id="phone_with_ddd" maxlength="14">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">Mixed Type Mask</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control mixed" id="mixed" maxlength="11">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">CPF</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control cpf" id="cpf" maxlength="14">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">CNPJ</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control cnpj" id="cnpj" maxlength="18">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">IP Address</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control ip_address" id="ip_address" maxlength="15">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">With Clear If Not Match Option</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control clear-if-not-match" id="clear-if-not-match" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">With a fallback digit</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control fallback" id="fallback" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label text-right col-md-3">With selectOnFocus</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control selectonfocus" id="selectonfocus" maxlength="10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="card-footer bg-light">
+                            <div class="form-actions">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="offset-sm-3 col-md-5">
+                                                <button class="btn btn-primary btn-rounded">Submit</button>
+                                                <button class="btn btn-light btn-rounded btn-outline">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

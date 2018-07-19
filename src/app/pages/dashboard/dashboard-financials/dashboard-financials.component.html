@@ -1,0 +1,128 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Financial Dashboard</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboards</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Financial Dashboard</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h5 class="card-header">Sales</h5>
+                    <div class="card-body p-10">
+                        <h5 class="card-title secondary-type m-b-0 m-l-10">$43,000</h5>
+                        <small class="text-muted m-l-10">Week of July 1st - July 5th</small>
+                        <div id="ct-LineChart1" class="chartist-primary">
+                            <div class="ct-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h5 class="card-header">Payouts</h5>
+                    <div class="card-body p-10">
+                        <h5 class="card-title secondary-type m-b-0 m-l-10">$19,320</h5>
+                        <small class="text-muted m-l-10">Week of July 1st - July 5th</small>
+                        <div id="ct-LineChart2" class="chartist-accent">
+                            <div class="ct-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h5 class="card-header">Total Revenue</h5>
+                    <div class="card-body p-10">
+                        <div id="total-revenue" style="height:290px"></div>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="list-reset list-inline-block text-center">
+                            <li class="text-muted text-secondary m-r-10"><i class="badge badge-secondary m-r-5 badge-circle w-10 h-10"></i>Other</li>
+                            <li class="text-muted text-primary m-r-10"><i class="badge badge-primary m-r-5  badge-circle w-10 h-10"></i>Returning</li>
+                            <li class="text-muted text-info m-r-10"><i class="badge badge-info m-r-5  badge-circle w-10 h-10 "></i>New </li>
+                            <li class="text-muted text-accent m-r-10 "><i class="badge badge-accent m-r-5  badge-circle w-10 h-10 "></i>Referrals </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">
+                        Monthly budget
+                    </h5>
+                    <div class="card-body p-0">
+                        <div class="row m-0 col-border-xl">
+                            <div class="col-md-2 p-20">
+                                <div class="card-body p-0">
+                                    <h6>Total Income</h6>
+                                    <span class="h3 text-primary">$86,350</span>
+                                    <h6 class="m-t-20">Total Expenses</h6>
+                                    <span class="h3 text-danger">$28,300</span>
+                                    <h6 class="m-t-20 p-b-5">Top Expenses</h6>
+                                    <ul class="list-reset">
+                                        <li class="p-b-10">
+                                            Housing
+                                            <span class="float-right">$12,300</span>
+                                        </li>
+                                        <li class="p-b-10">
+                                            Cars
+                                            <span class="float-right">$3,650</span>
+                                        </li>
+                                        <li>
+                                            AT&T
+                                            <span class="float-right">$1,800</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <div id="monthly-budget-2">
+                                        <div id="monthly-budget-content-2" style="height: 350px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

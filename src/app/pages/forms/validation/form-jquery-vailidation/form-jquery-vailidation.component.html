@@ -1,0 +1,200 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">jQuery Validation</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">jQuery Validation</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">jQuery Validation</h5>
+                    <form class="form-horizontal" id="validate-form">
+                        <div class="card-body">
+
+                            <div class="form-body">
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Name</label>
+                                    <div class="col-md-5">
+                                        <input id="nameInput" type="text" name="nameInput" placeholder="Enter your name" data-rule-required="true" minlength="2" class="form-control" aria-required="true" autocomplete="given-name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Email</label>
+                                    <div class="col-md-5">
+                                        <input id="emailInput" type="text" name="emailInput" placeholder="Enter your email" data-rule-required="true" data-rule-rangelength="[10,30]" data-rule-email="true" class="form-control" aria-required="true">
+
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Password</label>
+                                    <div class="col-md-5">
+                                        <input id="passInput" type="password" name="passInput" placeholder="Enter password" data-rule-required="true" data-rule-rangelength="[10,30]" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Confirm password</label>
+                                    <div class="col-md-5">
+                                        <input id="confirmPassInput" type="password" name="confirmPassInput" placeholder="Enter confirm password" data-rule-required="true" data-rule-equalto="#passInput" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <hr class="dashed ">
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Date picker</label>
+                                    <div class="col-md-5">
+                                        <div data-format="MM/DD/YYYY" class="input-group">
+                                            <input id="datePickerInput" type="text" name="datePickerInput" placeholder="Enter date" data-rule-required="true" data-rule-minlength="8" data-rule-date="true" class="form-control" aria-required="true">
+                                            <span class="input-group-addon"><i class="icon dripicons-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Website</label>
+                                    <div class="col-md-5">
+                                        <input id="websiteInput" type="text" name="websiteInput" placeholder="Enter website" data-rule-required="true" data-rule-url="true" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Credit card</label>
+                                    <div class="col-md-5">
+                                        <input id="ccInput" type="text" name="ccInput" placeholder="Enter credit card" data-rule-required="true" data-rule-creditcard="true" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Decimal number</label>
+                                    <div class="col-md-5">
+                                        <input id="decimalNumber" type="text" name="decimalNumber" placeholder="Enter decimal number" data-rule-required="true" data-rule-number="true" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Digits</label>
+                                    <div class="col-md-5">
+                                        <input id="digitsNumberInput" type="text" name="digitsNumberInput" placeholder="Enter digits" data-rule-required="true" data-rule-digits="true" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Range 1-5</label>
+                                    <div class="col-md-5">
+                                        <input id="digitRangeInput" type="text" name="digitRangeInput" placeholder="Enter digit range 1-5" data-rule-required="true" data-rule-range="[1,5]" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Phone US</label>
+                                    <div class="col-md-5">
+                                        <input id="phoneInput" type="text" name="phoneInput" placeholder="Enter phone US" data-rule-required="true" data-rule-phoneus="true" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Gender</label>
+                                    <div class="col-md-5">
+                                        <div class="custom-control custom-radio radio-primary">
+                                            <input type="radio" name="genderInput" value="male" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateRadio1">
+                                            <label class="custom-control-label" for="stateRadio1">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio radio-primary">
+                                            <input type="radio" name="genderInput" value="female" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateRadio2" name="radio-stacked" required="">
+                                            <label class="custom-control-label" for="stateRadio2">Female</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">JS Frameworks</label>
+                                    <div class="col-md-5">
+                                        <div class="custom-control custom-checkbox checkbox-primary">
+                                            <input type="checkbox" name="frameworkInput" value="angularjs" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateCheck1">
+                                            <label class="custom-control-label" for="stateCheck1">AngularJS</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox checkbox-primary form-check">
+                                            <input type="checkbox" name="frameworkInput" value="react" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateCheck2">
+                                            <label class="custom-control-label" for="stateCheck2">React</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox checkbox-primary form-check">
+                                            <input type="checkbox" name="frameworkInput" value="ember" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateCheck3">
+                                            <label class="custom-control-label" for="stateCheck3">Ember</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox checkbox-primary form-check">
+                                            <input type="checkbox" name="frameworkInput" value="adonis" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateCheck4">
+                                            <label class="custom-control-label" for="stateCheck4">Adonis</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox checkbox-primary form-check">
+                                            <input type="checkbox" name="frameworkInput" value="vue" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateCheck5">
+                                            <label class="custom-control-label" for="stateCheck5">Vue.js</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox checkbox-primary form-check">
+                                            <input type="checkbox" name="frameworkInput" value="backbone" data-rule-required="true" aria-required="true" class="custom-control-input" id="stateCheck6">
+                                            <label class="custom-control-label" for="stateCheck6"> Backbone.js</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label text-right col-md-3">Editors</label>
+                                    <div class="col-md-5">
+                                        <select id="editorsInput" name="editorsInput" multiple="multiple" data-rule-required="true" class="form-control select" aria-required="true" placeholder="Select one or more of your favourite editors">
+                      <option value="atom">Atom</option>
+                      <option value="Brackets">Brackets</option>
+                      <option value="Notepad ++">Notepad ++</option>
+                      <option value="Notepad">Notepad</option>
+                      <option value="Sublime Text">Sublime Text</option>
+                      <option value="TextEdit">TextEdit</option>
+                      <option value="TextMate">TextMate</option>
+                      <option value="Wordpad">Wordpad</option>
+                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="form-actions">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="offset-sm-3 col-md-5">
+                                                <button class="btn btn-primary btn-rounded submit">Submit</button>
+                                                <button class="btn btn-secondary clear-form btn-rounded btn-outline">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

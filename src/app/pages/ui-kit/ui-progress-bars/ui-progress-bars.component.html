@@ -1,0 +1,210 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Progress Bars</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">UI Kit</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Progress Bars</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Basic Progress Bar Example
+                    </h5>
+                    <div class="card-body">
+                        <p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code class="highlighter-rouge">&lt;progress&gt;</code> element</a>,
+                            ensuring you can stack progress bars, animate them, and place text labels over them.</p>
+                        <ul>
+                            <li>We use the <code class="highlighter-rouge">.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
+                            <li>We use the inner <code class="highlighter-rouge">.progress-bar</code> to indicate the progress so far.</li>
+                            <li>The <code class="highlighter-rouge">.progress-bar</code> requires an inline style, utility class, or custom CSS to set their width.</li>
+                            <li>The <code class="highlighter-rouge">.progress-bar</code> also requires some <code class="highlighter-rouge">role</code> and <code class="highlighter-rouge">aria</code> attributes to make it accessible.</li>
+                        </ul>
+                        <p>Put that all together, and you have the following examples.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Progress Bar Height
+                    </h5>
+                    <div class="card-body">
+                        <p>We only set a <code class="highlighter-rouge">height</code> value on the <code class="highlighter-rouge">.progress</code>, so if you change that value the inner <code class="highlighter-rouge">.progress-bar</code> will automatically
+                            resize accordingly.</p>
+                        <div class="progress mb-4" style="height: 1px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 3px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 5px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 8px;">
+                            <div class="progress-bar bg-accent" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 12px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Progress Bar Labels
+                    </h5>
+                    <div class="card-body">
+                        <p>Add labels to your progress bars by placing text within the <code class="highlighter-rouge">.progress-bar</code>.</p>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 44%;" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">44%</div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Multiple bars
+                    </h5>
+                    <div class="card-body">
+                        <p>Include multiple progress bars in a progress component if you need.</p>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Striped
+                    </h5>
+                    <div class="card-body">
+                        <p>Add <code class="highlighter-rouge">.progress-bar-striped</code> to any <code class="highlighter-rouge">.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Animated stripes
+                    </h5>
+                    <div class="card-body">
+                        <p>The striped gradient can also be animated. Add <code class="highlighter-rouge">.progress-bar-animated</code> to <code class="highlighter-rouge">.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Progress Bar Backgrounds
+                        <ul class="actions">
+                            <li>
+                                <a data-toggle="collapse" href="#code-progress--7" role="button" aria-expanded="false" aria-controls="code-progress--7">
+                                    <i class="zmdi zmdi-code"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </h5>
+                    <!-- START - CODE FOR DEMO PURPOSE ONLY -->
+                    <div class="collapse code-block" id="code-progress--7">
+                        <div class="bd-clipboard">
+                            <button class="btn btn-clipboard" data-clipboard-target="#code-progress--7">
+                  Copy
+                </button>
+                        </div>
+                        <pre><code class="html"></code></pre>
+                    </div>
+                    <!-- END - CODE FOR DEMO PURPOSE ONLY -->
+                    <div class="card-body">
+                        <p>Use background utility classes to change the appearance of individual progress bars.</p>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

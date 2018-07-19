@@ -1,0 +1,98 @@
+<div class="content">
+    <header class="page-header container">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Vertical Wizard</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Vertical Wizard</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <h5 class="card-header">Vertical Form Wizard</h5>
+                    <div class="card-body">
+                        <form id="vertical-wizard" action="#">
+                            <h3>Account Creation</h3>
+                            <section>
+                                <h5 class="card-title">Account Creation</h5>
+                                <div class="form-group">
+                                    <label for="userName">User name *</label>
+                                    <input type="text" class="form-control required" name="userName" id="userName" placeholder="What's your name?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password *</label>
+                                    <input id="password" name="password" type="password" class="form-control required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm">Confirm Password *</label>
+                                    <input id="confirm" name="confirm" type="password" class="form-control required">
+                                </div>
+                            </section>
+                            <h3>Profile Setup</h3>
+                            <section>
+                                <h5 class="card-title">Profile Setup</h5>
+
+                                <div class="form-group">
+                                    <label for="name">First name *</label>
+                                    <input type="text" class="form-control required" name="name" id="name" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="surname">Last name *</label>
+                                    <input type="text" class="form-control required" name="surname" id="surname" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" class="form-control required email" name="email" id="email" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" name="address" id="address" placeholder="">
+                                </div>
+                            </section>
+                            <h3>Confirm</h3>
+                            <section>
+                                <h5 class="card-title">Confirm</h5>
+                                <div class="custom-control custom-checkbox checkbox-primary form-check">
+                                    <input type="checkbox" class="custom-control-input required" id="acceptTerms" name="acceptTerms">
+                                    <label class="custom-control-label" for="acceptTerms">I agree with the Terms and Conditions.</label>
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

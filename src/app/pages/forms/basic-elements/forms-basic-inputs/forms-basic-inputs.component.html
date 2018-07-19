@@ -1,0 +1,211 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Basic Inputs</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Basic Inputs</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Basic Input Style</h5>
+                    <div class="card-body">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="demoTextInput1">Text Input</label>
+                                <input type="text" class="form-control" id="demoTextInput1" placeholder="What's your name?">
+                            </div>
+                            <div class="form-group">
+                                <label for="staticEmail">Static Control</label>
+                                <input type="email" readonly class="form-control-plaintext" autocomplete="email" id="staticEmail" value="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDisabled">Disabled Input</label>
+                                <input type="text" class="form-control" id="inputDisabled" autocomplete="name" placeholder="Disabled input here..." disabled="">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputHelp1">Helping text</label>
+                                <input type="text" class="form-control" id="exampleInputHelp1" aria-describedby="textHelp1" autocomplete="username" placeholder="Help text">
+                                <small id="textHelp1" class="form-text text-muted">A block of help text that breaks onto a new line and may extend beyond one line.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="demoPasswordInput1">Password</label>
+                                <input type="password" class="form-control" id="demoPasswordInput1" autocomplete="current-password" placeholder="Choose a password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Example select</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect2">Example multiple select</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Label and Input Sizing</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="col-form-label-lg" for="largeInput">Large Input</label>
+                                <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="largeInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="defaultInput">Default Input</label>
+                                <input class="form-control" type="text" placeholder="Default input" id="defaultInput">
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label-sm" for="smallInput">Small Input</label>
+                                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="smallInput">
+                            </div>
+                        </form>
+                        <form class="m-t-50">
+                            <div class="form-group row">
+                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm" autocomplete="email" placeholder="col-form-label-sm">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+                                </div>
+                            </div>
+                        </form>
+                        <form class="m-t-50">
+                            <div class="form-group">
+                                <label class="col-form-label-lg" for="lgSelect">Large Select</label>
+                                <select class="form-control form-control-lg" id="lgSelect">
+                  <option>Large select</option>
+                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="defaultSelect">Default Select</label>
+                                <select class="form-control" id="defaultSelect">
+                  <option>Default select</option>
+                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label-sm" for="smSelect">Small Select</label>
+                                <select class="form-control form-control-sm" id="smSelect">
+                  <option>Small select</option>
+                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Rounded Input Style</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="demoTextInput2">Text Input</label>
+                                <input type="text" class="form-control input-rounded" id="demoTextInput2" placeholder="What's your name?">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputHelp3">Helping text</label>
+                                <input type="text" class="form-control" id="exampleInputHelp3" autocomplete="username" aria-describedby="textHelp2" placeholder="Help text">
+                                <small id="textHelp2" class="form-text text-muted">A block of help text that breaks onto a new line and may extend beyond one line.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="demoPasswordInput2">Password</label>
+                                <input type="password" class="form-control input-rounded" id="demoPasswordInput2" autocomplete="current-password" placeholder="Choose a password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect3">Example select</label>
+                                <select class="form-control input-rounded" id="exampleFormControlSelect3">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect4">Example multiple select</label>
+                                <select multiple class="form-control input-rounded" id="exampleFormControlSelect4">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea2">Example textarea</label>
+                                <textarea class="form-control input-rounded" id="exampleFormControlTextarea2" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

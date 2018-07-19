@@ -1,0 +1,87 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Range Sliders</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Range Sliders</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="card-deck">
+            <div class="card">
+                <h5 class="card-header">Bootstrap Range
+                    <ul class="actions top-right">
+                        <li>
+                            <a href="https://getbootstrap.com/docs/4.1/components/forms/#range-inputs" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documentation"><i class="la la-external-link"></i></a>
+                        </li>
+                    </ul>
+                </h5>
+                <div class="card-body">
+                    <p>Create custom <code class="highlighter-rouge">&lt;input type="range"&gt;</code> controls with <code class="highlighter-rouge">.custom-range</code>. The track (the background) and thumb (the value) are both styled to appear the same
+                        across browsers. As only IE and Firefox support “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.</p>
+                    <label for="customRange1">Example range</label>
+                    <input type="range" class="custom-range" id="customRange1">
+
+                    <p class="m-t-30">Range inputs have implicit values for <code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code>—<code class="highlighter-rouge">0</code> and <code class="highlighter-rouge">100</code>, respectively.
+                        You may specify new values for those using the <code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code> attributes.</p>
+                    <label for="customRange2">Example range</label>
+                    <input type="range" class="custom-range" min="0" max="5" id="customRange2">
+                    <p class="m-t-30">By default, range inputs “snap” to integer values. To change this, you can specify a <code class="highlighter-rouge">step</code> value. In the example below, we double the number of steps by using <code class="highlighter-rouge">step="0.5"</code>.</p>
+                    <label for="customRange3">Example range</label>
+                    <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-header">noUiSlider
+                    <ul class="actions top-right">
+                        <li>
+                            <a href="https://refreshless.com/nouislider/" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documentation"><i class="la la-external-link"></i></a>
+                        </li>
+                    </ul>
+                </h5>
+                <div class="card-body">
+                    <p class="f-w-600">JavaScript Range Slider</p>
+                    <div class="card-body">
+                        <div id="slider-danger" class="slider slider-danger m-b-50"></div>
+                        <div id="slider-info" class="slider slider-info m-b-50"></div>
+                        <div id="slider-warning" class="slider slider-warning m-b-50"></div>
+                        <div id="slider-success" class="slider slider-success m-b-50"></div>
+                        <div id="slider-primary" class="slider slider-primary m-b-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

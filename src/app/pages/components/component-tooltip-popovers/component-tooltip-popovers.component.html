@@ -1,0 +1,133 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">Tooltips &amp; Popovers</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Components</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tooltips &amp; Popovers</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Basic Tooltip Demos</h5>
+                    <div class="card-body demo-buttons--preview">
+                        <p>
+                            Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left.
+                        </p>
+                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right"> Tooltip on right</button>
+                        <button class="btn btn-accent" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                        <button class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Basic Popover Demos</h5>
+                    <div class="card-body demo-buttons--preview">
+                        <p>
+                            Four options are available: top, right, bottom, and left aligned.
+                        </p>
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="Top Popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on top
+        </button>
+
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="Right Popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on right
+        </button>
+
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="Bottom Popover" data-placement="bottom" data-content="Vivamus
+        sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on bottom
+      </button>
+
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="Left Popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on left
+      </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Tooltips on Link Hover</h5>
+                    <div class="card-body">
+                        <p class="muted">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table
+                            seitan,
+                            <a href="#" data-toggle="tooltip" title="Another tooltip">mcsweeney's fixie </a> sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray.
+                            Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip"
+                                title="" data-original-title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Advanced Popover Demos</h5>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="col-5">
+                                    Insert HTML into popovers
+                                </div>
+                                <div class="col-7">
+                                    <button class="btn btn-primary" id="popover_scrollbar_demo" data-toggle="popover">Popover with HTML</button>
+                                    <div class="popper-content hide">
+                                        <h4>Popover Title</h4>
+                                        <p>
+                                            Lorem ipsum dolor amet <a href="http://www.google.com" target="_blank">banjo coloring book PBR&B single-origin coffee</a> banjo coloring book PBR&B single-origin coffee, banh mi chambray heirloom cray kombucha
+                                            swag. Affogato pinterest dreamcatcher ramps stumptown, hexagon celiac photo booth narwhal. Sartorial letterpress butcher put a bird on it art party.
+                                        </p>
+                                        <button class="btn btn-primary btn-sm text-right">Small Button</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="col-5">
+                                    Dismiss on next click
+                                </div>
+                                <div class="col-7">
+                                    <a tabindex="0" class="btn btn-info" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

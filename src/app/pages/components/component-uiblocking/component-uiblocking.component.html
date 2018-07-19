@@ -1,0 +1,84 @@
+<div class="content">
+    <header class="page-header">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h1 class="separator">UI Blocking</h1>
+                <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon dripicons-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Components</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">UI Blocking</li>
+                    </ol>
+                </nav>
+            </div>
+            <ul class="actions top-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-fab" data-toggle="dropdown" aria-expanded="false">
+                        <i class="la la-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-icon-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            Quick Actions
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-clockwise"></i> Refresh
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-gear"></i> Manage Widgets
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-cloud-download"></i> Export
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon dripicons-help"></i> Support
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card-deck">
+                    <div class="card">
+                        <h5 class="card-header">Element blocking</h5>
+                        <div class="card-body block-el">
+                            <p class="card-text text-center"><a href="javascript:void(0)" id="sweetalert_ui-blocking-demo-1">Test link - click me!</a> <br />This Test Link will be blocked by clicking the buttons below.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-qt-block=".block-el">Block Test Link</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header">Form Blocking</h5>
+                        <form id="block-form" method="POST" action="">
+                            <div class="card-body">
+                                <p>
+                                    Prevent Double Click with UI Blocking.
+                                </p>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" autocomplete="off">
+                                    <small id="hint" class="form-text text-muted">Enter your name and click submit.</small>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-accent" data-qt-block="#block-form">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card block-el">
+                        <h5 class="card-header">Page Blocking</h5>
+                        <div class="card-body">
+                            <button class="btn btn-primary" data-qt-block="body">Block current page</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+
+    </section>
+</div>

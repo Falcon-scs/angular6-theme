@@ -1,0 +1,376 @@
+<div id="app">
+    <app-sidebar-left></app-sidebar-left>
+    <div class="content-wrapper">
+        <app-top-toolbar></app-top-toolbar>
+
+        <div class="content">
+            <div class="page-content container-fluid" id="mail-wrapper">
+                <div class="card">
+                    <!-- 	START FLEX PAGE WRAPPER -->
+                    <div class="d-flex flex fixed-height" id="3-col-wrapper">
+                        <!-- 	START LEFT PAGE ASIDE -->
+                        <aside class="aside aside-left flex-fill">
+                            <button class="btn btn-primary btn-floating btn-block btn-lg" data-toggle-state="mail-compose-open" data-toggle-backdrop="open">Compose</button>
+                            <ul class="list-group list-group-full">
+                                <li class="list-group-item active"> <a href="javascript:void(0)"><i class="la la-inbox"></i> Inbox </a>
+                                    <span class="badge badge-success ml-auto">3</span></li>
+                                <li class="list-group-item">
+                                    <a href="javascript:void(0)"> <i class="la la-star-o"></i> Starred </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="javascript:void(0)"> <i class="la la-pencil-square"></i> Draft </a><span class="badge badge-danger ml-auto">1</span></li>
+                                <li class="list-group-item ">
+                                    <a href="javascript:void(0)"> <i class="la la-paper-plane-o"></i> Sent Mail </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="javascript:void(0)"> <i class="la la-trash"></i> Trash </a>
+                                </li>
+                            </ul>
+                            <ul class="list-group list-group-full">
+                                <li class="list-group-item">
+                                    <a href="javascript:void(0)">
+                                        <span class="nav-icon no-fade">
+                          <i class="badge badge-xs badge-o md b-info"></i>
+                        </span> Personal
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="javascript:void(0)">
+                                        <span class="nav-icon no-fade">
+                          <i class="badge badge-xs badge-o md b-success"></i>
+                        </span> Work </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="javascript:void(0)">
+                                        <span class="nav-icon no-fade">
+                            <i class="icon dripicons-plus"></i>
+                          </span> Add Label </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!-- 	END LEFT PAGE ASIDE -->
+                        <!-- 	START CENTER CONTENT -->
+                        <div class="center-content flex-fill">
+                            <div class="toolbar border-bottom">
+                                <ul class="actions top-left">
+                                    <li id="mobile-aside-menu-trigger">
+                                        <a href="javascript:void(0)" data-q-action="page-aside-left-open"><i class="icon svg-icon">
+                              <svg id="i-menu" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
+                              </svg>
+                            </i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-wrapper">
+                                <button class="search-button-submit" type="submit"><i class="icon dripicons-search"></i></button>
+                                <input type="text" class="search-input" placeholder="Search...">
+                                <i class="icon dripicons-cross close-search"></i>
+                            </div>
+                            <div class="scroll-y">
+                                <ul class="list-group" data-scroll="minimal-dark">
+                                    <li class="list-group-item">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">1:30pm</small>
+                                                <h6 class="list-group-item-heading">Mike Jones</h6>
+                                                <p class="list-group-item-title">Work Inquiry</p>
+                                                <p class="list-group-item-text">Fashion axe kitsch marfa, art party gluten-free...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">12:08pm</small>
+                                                <h6 class="list-group-item-heading">Kurt Hunt</h6>
+                                                <p class="list-group-item-title">Summer hours</p>
+                                                <p class="list-group-item-text">Paleo meditation selvage meggings hell of...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">11:45am</small>
+                                                <h6 class="list-group-item-heading">Sketch</h6>
+                                                <p class="list-group-item-title">Sketch News - Issue 42</p>
+                                                <p class="list-group-item-text"> Succulents cliche viral cardigan YOLO austin...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item active">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 5</small>
+                                                <h6 class="list-group-item-heading">Susie Obrien</h6>
+                                                <p class="list-group-item-title">Love your design work!</p>
+                                                <p class="list-group-item-text">Pug biodiesel brooklyn, woke roof party scenester... </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 3</small>
+                                                <h6 class="list-group-item-heading">Kristine Price</h6>
+                                                <p class="list-group-item-title">Work Inquiry</p>
+                                                <p class="list-group-item-text">Fashion axe kitsch marfa, art party gluten-free...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 3</small>
+                                                <h6 class="list-group-item-heading">Ira Doyle</h6>
+                                                <p class="list-group-item-title">Hey, check it out</p>
+                                                <p class="list-group-item-text">Paleo meditation selvage meggings hell of...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 2</small>
+                                                <h6 class="list-group-item-heading">Julius Williams</h6>
+                                                <p class="list-group-item-title">Sketch News - Issue 42</p>
+                                                <p class="list-group-item-text"> Succulents cliche viral cardigan YOLO austin...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 2</small>
+                                                <h6 class="list-group-item-heading">Silvia Kennedyr</h6>
+                                                <p class="list-group-item-title">Love your design work!</p>
+                                                <p class="list-group-item-text">Pug biodiesel brooklyn, woke roof party scenester... </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 2</small>
+                                                <h6 class="list-group-item-heading">Candice Nunez</h6>
+                                                <p class="list-group-item-title">Work Inquiry</p>
+                                                <p class="list-group-item-text">Fashion axe kitsch marfa, art party gluten-free...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 1</small>
+                                                <h6 class="list-group-item-heading">Bill Oliver</h6>
+                                                <p class="list-group-item-title">Your year in design</p>
+                                                <p class="list-group-item-text">Paleo meditation selvage meggings hell of...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 1</small>
+                                                <h6 class="list-group-item-heading">Mack Nunez</h6>
+                                                <p class="list-group-item-title">Sketch News - Issue 42</p>
+                                                <p class="list-group-item-text"> Succulents cliche viral cardigan YOLO austin...</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="javascript:void(0)" class="item d-flex" data-q-action="page-aside-right-open">
+                                            <div class="avatar order-1">
+                                                <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40">
+                                            </div>
+                                            <div class="row-content order-2">
+                                                <small class="text-muted float-right">Jun 1</small>
+                                                <h6 class="list-group-item-heading">Betsy Brady</h6>
+                                                <p class="list-group-item-title">Love your design work!</p>
+                                                <p class="list-group-item-text">Pug biodiesel brooklyn, woke roof party... </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 	END CENTER CONTENT -->
+                        <!-- 	START RIGHT PAGE ASIDE -->
+                        <aside class="aside aside-right flex-fill">
+                            <div class="toolbar border-bottom">
+                                <ul class="actions top-left">
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="icon dripicons-chevron-left"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="icon dripicons-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                                <ul class="actions top-right">
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="icon dripicons-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i data-q-action="page-aside-right-open" class="icon dripicons-cross"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="scroll-y">
+                                <div class="card no-shadow p-30" data-scroll="minimal-dark">
+                                    <div class="card-header border-none">
+                                        <img src="http://via.placeholder.com/128x128" alt="contact person" class="rounded-circle w-40 m-r-10 ">
+                                        <span>Susie Obrien</span>
+                                        <ul class="actions top-right">
+                                            <li>
+                                                <button type="button" class="btn btn-sm btn-light btn-outline">
+                                  <i class="icon dripicons-reply"></i> Reply
+                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn-sm btn-light btn-outline">
+                                  <i class="icon dripicons-forward"></i> Forward
+                                </button>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="la la-ellipsis-h"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="icon dripicons-forward p-r-10"></i> <span>Reply to message</span>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="icon dripicons-forward p-r-10"></i> <span>Forward message</span>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="icon dripicons-print p-r-10"></i> <span>Print message</span>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="icon dripicons-trash p-r-10"></i> <span>Delete this message</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body p-t-0">
+                                        <h5 class="card-title">Love your design work!</h5>
+                                        <p>Lorem ipsum dolor amet retro bicycle rights flexitarian stumptown venmo, photo booth tacos pok pok taiyaki. Plaid normcore distillery leggings celiac blue bottle intelligentsia direct trade flexitarian retro viral
+                                            lyft shaman meh beard. Stumptown locavore meditation, pitchfork distillery craft beer vegan brooklyn. Neutra vegan direct trade, meggings deep v etsy DIY aesthetic asymmetrical live-edge dreamcatcher shoreditch
+                                            everyday carry enamel pin. Flannel plaid hoodie fashion axe single-origin coffee yr poutine tattooed normcore ethical. Roof party bitters tousled authentic gastropub schlitz echo park iPhone fanny pack +1. Skateboard
+                                            90's letterpress hell of enamel pin vape mlkshk flannel sriracha swag celiac pitchfork jianbing pug.
+                                        </p>
+                                        <p>Godard ethical cardigan etsy artisan. Artisan coloring book twee brunch jean shorts, cardigan hoodie everyday carry bushwick cloud bread forage. Vaporware whatever chillwave cardigan godard cloud bread helvetica
+                                            flexitarian skateboard health goth vexillologist kitsch. Banjo twee copper mug lomo lumbersexual fashion axe succulents vaporware selfies. Blue bottle microdosing sartorial farm-to-table, kickstarter man braid
+                                            tumeric cardigan waistcoat yuccie art party godard. Paleo craftbeer whatever occupy bitters portland franzen cardigan adaptogen vinyl normcore. 3 wolf moon activated charcoal hella, sriracha brunch cornhole
+                                            readymade lyft gochujang bespoke DIY.</p>
+                                        <p>Bicycle rights gentrify viral mixtape vice copper mug mlkshk humblebrag pug fanny pack next level occupy meditation. Palo santo bushwick lumbersexual viral drinking vinegar craft beer, kogi kitsch roof party. Edison
+                                            bulb four dollar toast adaptogen,iPhone cliche ethical mixtape pok pok. Irony messenger bag crucifix, slow-carb man bun mumblecore enamel pin air plant trust fund. Street art yr flannel, kitsch activated charcoal
+                                            four dollar toast venmo cornhole. Af lo-fi microdosing tilde echo park knausgaard health goth, subway tile pop-up tacos XOXO crucifix la croix photo booth austin. Pabst cardigan cronut, YOLO pok pok occupy sustainable
+                                            gochujang bicycle rights drinking vinegar man braid.</p>
+
+
+                                        <p>Lorem ipsum dolor amet retro bicycle rights flexitarian stumptown venmo, photo booth tacos pok pok taiyaki. Plaid normcore distillery leggings celiac blue bottle intelligentsia direct trade flexitarian retro viral
+                                            lyft shaman meh beard. Stumptown locavore meditation, pitchfork distillery craft beer vegan brooklyn. Neutra vegan direct trade, meggings deep v etsy DIY aesthetic asymmetrical live-edge dreamcatcher shoreditch
+                                            everyday carry enamel pin. Flannel plaid hoodie fashion axe single-origin coffee yr poutine tattooed normcore ethical. Roof party bitters tousled authentic gastropub schlitz echo park iPhone fanny pack +1. Skateboard
+                                            90's letterpress hell of enamel pin vape mlkshk flannel sriracha swag celiac pitchfork jianbing pug.
+                                        </p>
+                                        <p>Godard ethical cardigan etsy artisan. Artisan coloring book twee brunch jean shorts, cardigan hoodie everyday carry bushwick cloud bread forage. Vaporware whatever chillwave cardigan godard cloud bread helvetica
+                                            flexitarian skateboard health goth vexillologist kitsch. Banjo twee copper mug lomo lumbersexual fashion axe succulents vaporware selfies. Blue bottle microdosing sartorial farm-to-table, kickstarter man braid
+                                            tumeric cardigan waistcoat yuccie art party godard. Paleo craftbeer whatever occupy bitters portland franzen cardigan adaptogen vinyl normcore. 3 wolf moon activated charcoal hella, sriracha brunch cornhole
+                                            readymade lyft gochujang bespoke DIY.</p>
+                                        <p>Bicycle rights gentrify viral mixtape vice copper mug mlkshk humblebrag pug fanny pack next level occupy meditation. Palo santo bushwick lumbersexual viral drinking vinegar craft beer, kogi kitsch roof party. Edison
+                                            bulb four dollar toast adaptogen,iPhone cliche ethical mixtape pok pok. Irony messenger bag crucifix, slow-carb man bun mumblecore enamel pin air plant trust fund. Street art yr flannel, kitsch activated charcoal
+                                            four dollar toast venmo cornhole. Af lo-fi microdosing tilde echo park knausgaard health goth, subway tile pop-up tacos XOXO crucifix la croix photo booth austin. Pabst cardigan cronut, YOLO pok pok occupy sustainable
+                                            gochujang bicycle rights drinking vinegar man braid.</p>
+
+                                        <p>Lorem ipsum dolor amet retro bicycle rights flexitarian stumptown venmo, photo booth tacos pok pok taiyaki. Plaid normcore distillery leggings celiac blue bottle intelligentsia direct trade flexitarian retro viral
+                                            lyft shaman meh beard. Stumptown locavore meditation, pitchfork distillery craft beer vegan brooklyn. Neutra vegan direct trade, meggings deep v etsy DIY aesthetic asymmetrical live-edge dreamcatcher shoreditch
+                                            everyday carry enamel pin. Flannel plaid hoodie fashion axe single-origin coffee yr poutine tattooed normcore ethical. Roof party bitters tousled authentic gastropub schlitz echo park iPhone fanny pack +1. Skateboard
+                                            90's letterpress hell of enamel pin vape mlkshk flannel sriracha swag celiac pitchfork jianbing pug.
+                                        </p>
+                                        <p>Godard ethical cardigan etsy artisan. Artisan coloring book twee brunch jean shorts, cardigan hoodie everyday carry bushwick cloud bread forage. Vaporware whatever chillwave cardigan godard cloud bread helvetica
+                                            flexitarian skateboard health goth vexillologist kitsch. Banjo twee copper mug lomo lumbersexual fashion axe succulents vaporware selfies. Blue bottle microdosing sartorial farm-to-table, kickstarter man braid
+                                            tumeric cardigan waistcoat yuccie art party godard. Paleo craftbeer whatever occupy bitters portland franzen cardigan adaptogen vinyl normcore. 3 wolf moon activated charcoal hella, sriracha brunch cornhole
+                                            readymade lyft gochujang bespoke DIY.</p>
+                                        <p>Bicycle rights gentrify viral mixtape vice copper mug mlkshk humblebrag pug fanny pack next level occupy meditation. Palo santo bushwick lumbersexual viral drinking vinegar craft beer, kogi kitsch roof party. Edison
+                                            bulb four dollar toast adaptogen,iPhone cliche ethical mixtape pok pok. Irony messenger bag crucifix, slow-carb man bun mumblecore enamel pin air plant trust fund. Street art yr flannel, kitsch activated charcoal
+                                            four dollar toast venmo cornhole. Af lo-fi microdosing tilde echo park knausgaard health goth, subway tile pop-up tacos XOXO crucifix la croix photo booth austin. Pabst cardigan cronut, YOLO pok pok occupy sustainable
+                                            gochujang bicycle rights drinking vinegar man braid.</p>
+                                        <p class="p-0">
+                                            <span class="d-block text-muted">Cheers,</span>
+                                            <span class="d-block text-muted">Susie Obrien</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="reply-wrapper">
+                                            <p class="p-0 m-0">
+                                                <a href="javascript:void(0)" class="reply">Click here to Reply, Reply to all, or Forward.</a>
+                                            </p>
+                                            <span class="attachment">
+                                                  <i class="icon dripicons-paperclip"></i>
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- 	END RIGHT PAGE ASIDE -->
+                    </div>
+                    <!-- 	END FLEX PAGE WRAPPER -->
+                </div>
+            </div>
+        </div>
+
+        <app-sidebar-right></app-sidebar-right>
+
+        <div id="mail_compose_wrapper" class="mail-compose">
+            <div class="tippy-top"></div>
+            <form class="compose-form">
+                <div class="form-group p-0 m-0">
+                    <input type="text" value="" placeholder="To" class="form-control border-bottom-none" id="email-to">
+                </div>
+                <div class="form-group p-0 m-0">
+                    <input type="text" value="" placeholder="Subject" class="form-control border-bottom-none" id="email-info-wrapper">
+                </div>
+                <div class="form-group p-0 m-0">
+                    <textarea class="form-control message" placeholder="Compose email" rows="20" id="email-message"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
